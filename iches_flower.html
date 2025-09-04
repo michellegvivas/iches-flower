@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICHE's Flower</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Navigation */
+    header {
+      background: linear-gradient(90deg, deeppink, hotpink);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 22px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe4ec;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff0f5;
+    }
+    .hero img {
+      width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+    }
+    .hero h2 {
+      color: deeppink;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Flower Gallery */
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      color: deeppink;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* Video Section */
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .video-gallery video {
+      width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: hotpink;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>ICHE's Flower</h1>
+    <nav>
+      <a href="#gallery">Flowers</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="ICHE's Logo.jpg" alt="ICHE's Flower Logo">
+    <h2>WELCOME TO ICHE'S FLOWER</h2>
+    <p>"A touch of love in every handcrafted bloom 🌸"</p>
+  </section>
+
+  <!-- Flower Gallery -->
+  <section class="section" id="gallery">
+    <h2>🌺 My Handcrafted Flowers</h2>
+    <div class="gallery">
+      <img src="2set Of Bouquet.jpg" alt="Handcrafted Flower 1">
+      <img src="1set.jpg" alt="Handcrafted Flower 2">
+      <img src="Blue.jpg" alt="Handcrafted Flower 3">
+      <img src="Green.jpg" alt="Handcrafted Flower 4">
+      <img src="Pink.jpg" alt="Handcrafted Flower 5">
+      <img src="Red.jpg" alt="Handcrafted Flower 6">
+      <img src="Violet.jpg" alt="Handcrafted Flower 7">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section" id="videos">
+    <h2>🎥 Flower Handcraft Videos</h2>
+    <div class="video-gallery">
+      <video controls>
+        <source src="2set.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="All.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="Daisy.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="ToCavite.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="Tulip.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>📍 Humayingan, Lian, Batangas, Philippines</p>
+    <p>📧 Email: <a href="mailto:icheflower@gmail.com">icheflower@gmail.com</a></p>
+    <p>&copy; 2025 ICHE's Flower. All rights reserved.</p>
+  </footer>
+</body>
+</html>
